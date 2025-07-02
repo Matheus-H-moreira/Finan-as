@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9FAFB;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ECEFF1;
+    padding: 50px 150px;
+    border: solid black 1px;
+    border-radius: 12px;
+    gap: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#titulo {
+    color: #004D61;
+    margin-bottom: 30px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.input {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.input label{
+    text-align: left;
+    position: absolute;
+    width: 50%;
+    background: transparent;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    z-index: 1;
+    font-size: 1.2rem;
+    transition: all 0.4s ease;
+}
+
+.input input {
+    width: 400px;
+    height: 45px;
+    padding: 5%;
+    border: solid #CFD8DC 1px;
+    border-radius: 8px;
+    outline: none;
+    z-index: 99;
+    transition: border-color 0.4s ease;
+}
+
+.input input:hover,
+.input input:focus,
+.input input:not(:placeholder-shown) {
+    border-color: #004D61;
+    background-color: #ECEFF1;
+}
+
+.input input:hover~label,
+.input input:focus~label,
+.input input:not(:placeholder-shown)~label {
+    top: -10px;
+    left: 10px;
+    background-color: #ECEFF1;
+    color: #004D61;
+    font-size: 1rem;
+    padding-left: 8px;
+}
+
+.botao_cadastrar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaoCadastro {
+    padding: 8px;
+    width: 200px;
+    background-color: #2E7D32;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#botaoCadastro:hover {
+    transform: scale(1.1);
+}
