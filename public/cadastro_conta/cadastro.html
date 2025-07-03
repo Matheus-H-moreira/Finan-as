@@ -13,49 +13,51 @@
 <body>
     <main>
         <h1 id="titulo">Cadastro</h1>
-        <div class="inputs">
-            <div class="linha">
-                <div class="input">
-                    <input type="text" name="input nome" id="nome" placeholder="" required>
-                    <label for="nome"><i class="fa-solid fa-user"></i>Nome</label>
+        <form id="formCadastro">
+            <div class="inputs">
+                <div class="linha">
+                    <div class="input">
+                        <input type="text" name="input nome" id="nome" placeholder="" required>
+                        <label for="nome"><i class="fa-solid fa-user"></i>Nome</label>
+                    </div>
+            
+                    <div class="input">
+                        <input type="text" name="input sobrenome" id="sobrenome" placeholder="" required>
+                        <label for="sobrenome"><i class="fa-solid fa-user"></i>Sobrenome</label>
+                    </div>
                 </div>
-
-                <div class="input">
-                    <input type="text" name="input sobrenome" id="sobrenome" placeholder="" required>
-                    <label for="sobrenome"><i class="fa-solid fa-user"></i>Sobrenome</label>
+            
+                <div class="linha">
+                    <div class="input">
+                        <input type="email" name="input email" id="email" placeholder="" required>
+                        <label for="email"><i class="fa-solid fa-envelope"></i>E-mail</label>
+                    </div>
+            
+                    <div class="input">
+                        <input type="text" name="input nome usuario" id="usuario" placeholder="" required>
+                        <label for="usuario"><i class="fa-solid fa-user"></i>Usuário</label>
+                    </div>
+                </div>
+            
+                <div class="linha">
+                    <div class="input">
+                        <input type="password" name="input senha" id="senha" placeholder="" required>
+                        <label for="senha"><i class="fa-solid fa-lock"></i>Senha</label>
+                    </div>
+            
+                    <div class="input">
+                        <input type="password" name="input confirmar senha" id="confirmarSenha" placeholder="" required>
+                        <label for="confirmarSenha"><i class="fa-solid fa-lock"></i>Confirmar Senha</label>
+                    </div>
                 </div>
             </div>
-
-            <div class="linha">
-                <div class="input">
-                    <input type="email" name="input email" id="email" placeholder="" required>
-                    <label for="email"><i class="fa-solid fa-envelope"></i>E-mail</label>
-                </div>
-
-                <div class="input">
-                    <input type="text" name="input nome usuario" id="usuario" placeholder="" required>
-                    <label for="usuario"><i class="fa-solid fa-user"></i>Usuário</label>
-                </div>
+            
+            <div class="botao_cadastrar">
+                <button type="submit" id="botaoCadastro">
+                    <h2>Cadastrar-se</h2>
+                </button>
             </div>
-
-            <div class="linha">
-                <div class="input">
-                    <input type="password" name="input senha" id="senha" placeholder="" required>
-                    <label for="senha"><i class="fa-solid fa-lock"></i>Senha</label>
-                </div>
-
-                <div class="input">
-                    <input type="password" name="input confirmar senha" id="confirmarSenha" placeholder="" required>
-                    <label for="confirmarSenha"><i class="fa-solid fa-lock"></i>Confirmar Senha</label>
-                </div>
-            </div>
-        </div>
-
-        <div class="botao_cadastrar">
-            <button id="botaoCadastro">
-                <h2>Cadastrar-se</h2>
-            </button>
-        </div>
+        </form>
     </main>
 
     <script src="app.js"></script>
