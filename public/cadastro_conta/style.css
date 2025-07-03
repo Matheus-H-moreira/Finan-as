@@ -53,6 +53,11 @@ main {
     position: relative;
 }
 
+.linha {
+    display: flex;
+    gap: 10px;
+}
+
 .input label{
     text-align: left;
     position: absolute;
