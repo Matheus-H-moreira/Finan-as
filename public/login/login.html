@@ -13,24 +13,26 @@
 <body>
     <main>
         <h1 id="titulo">Login</h1>
-        <div class="inputs">
-            <div class="input">
-                <input type="text" name="input nome usuario" id="usuario" placeholder="" required>
-                <label for="usuario"><i class="fa-solid fa-user"></i>Usuário</label>
+        <form id="formLogin">
+            <div class="inputs">
+                <div class="input">
+                    <input type="text" name="input nome usuario" id="usuario" placeholder="" required>
+                    <label for="usuario"><i class="fa-solid fa-user"></i>Usuário</label>
+                </div>
+            
+                <div class="input">
+                    <input type="password" name="input senha" id="senha" placeholder="" required>
+                    <label for="senha"><i class="fa-solid fa-lock"></i>Senha</label>
+                </div>
             </div>
-
-            <div class="input">
-                <input type="password" name="input senha" id="senha" placeholder="" required>
-                <label for="senha"><i class="fa-solid fa-lock"></i>Senha</label>
+            
+            <div class="botao_cadastrar">
+                <button type="submit" id="botaoCadastro">
+                    <h2>Entrar</h2>
+                </button>
             </div>
-        </div>
-
-        <div class="botao_cadastrar">
-            <button id="botaoCadastro">
-                <h2>Entrar</h2>
-            </button>
-        </div>
-
+        </form>
+        
         <p>Não tem uma conta? <a href="../cadastro_conta/cadastro.html">Cadastre-se</a></p>
     </main>
 
